@@ -50,7 +50,7 @@ class Server():
         if success == False and self.alert == False:
             # Send Alert
             self.alert = True
-            email_alert(self.name, f"{msg}\n{now}", "glpreetham@gmail.com")
+            email_alert(self.name, f"{msg}\n{now}", "")
 
         self.create_history(msg, success, now)
 
