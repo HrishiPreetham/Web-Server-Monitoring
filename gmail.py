@@ -9,10 +9,10 @@ def email_alert(subject, body, to):
     msg.set_content(body)
 
     # UPDATE THESE LINES TO YOUR INFO
-    gmail_user = 'glpreetham@gmail.com'
+    gmail_user = ''
     gmail_password = 'sxbfimcovbdmmxs'
     msg['Subject'] = subject
-    msg['From'] = "glpreetham@gmail.com"
+    msg['From'] = ""
     msg['To'] = to
 
 
@@ -25,4 +25,4 @@ def email_alert(subject, body, to):
     s.quit()
 
 if __name__ == '__main__':
-    email_alert("Test","I think it works","glpreetham@gmail.com")
+    email_alert("Test","I think it works","")
